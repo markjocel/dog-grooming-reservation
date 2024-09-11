@@ -1,0 +1,90 @@
+<div class="socials">
+    <div class="follow">
+        <h3>Give us a follow!</h3>
+        <div class="social">
+            <img src="./facebook.png" alt=""><span>The Groom Room</span>
+        </div>
+        <div class="social">
+            <img src="./instagram.png" alt=""><span>&#64;thegroomroom</span>
+        </div>
+        <div class="social">
+            <img src="./tiktok.png" alt=""><span>&#64;thegroomroom</span>
+        </div>
+        <div class="social">
+            <img src="./twitter.png" alt=""><span>&#64;thegroomroom</span>
+        </div>
+    </div>
+    <img class="friend" src="./friend.svg" alt="">
+</div>
+
+<section class="reservation-form">
+
+    <h2>Contact us</h2>
+    <p>
+        Book Your Grooming Appointment Today!
+    </p>
+
+    <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
+
+        <div>
+            <div class="input-container">
+                <label for="first-name">First name</label>
+                <input id="first-name" type="text" formControlName="firstName" placeholder="Full Name*">
+            </div>
+
+            <div class="input-container">
+                <label for="last-name">Last name</label>
+                <input id="last-name" type="text" formControlName="lastName" placeholder="Full Name*">
+            </div>
+        </div>
+
+        <div>
+
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input id="email" type="email" formControlName="email" placeholder="Email address* ">
+            </div>
+        </div>
+
+        <div>
+
+            <div class="input-container">
+                <label for="contact-number">Contact Number</label>
+                <input id="contact-number" type="" formControlName="contactNo" placeholder="Contact number ">
+            </div>
+
+
+            <div class="input-container">
+                <label for="date-time">Preferred Date/Time</label>
+                <input id="date-time" type="" formControlName="dateTime" placeholder="Date/Time">
+            </div>
+        </div>
+
+        <div>
+
+            <div class="input-container">
+                <label for="dog-name">Dog name</label>
+                <input id="dog-name" type="text" formControlName="dogName" placeholder="Dog Name">
+            </div>
+
+
+            <div class="input-container">
+                <label for="dog-breed">Dog breed</label>
+                <input id="dog-breed" type="text" formControlName="dogBreed" placeholder="Dog Breed">
+            </div>
+        </div>
+
+        <div>
+            <div class="input-container">
+                <label for="Message">Message</label>
+                <textarea id="message" type="" formControlName="message" placeholder="Message" rows="4"></textarea>
+            </div>
+        </div>
+
+        <input type="checkbox" name="" id="policy"><label class="checkbox-label" for="policy">Agree to our friendly policy.</label>
+        <br>
+        <input type="checkbox" name="" id="newsletter"><label class="checkbox-label" for="newsletter">Subscribe to our newsletter!</label>
+
+        <button type="submit">Reserve</button>
+    </form>
+</section>

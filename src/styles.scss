@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      color: #18171C;
+}
+
+body {
+    margin: 0;
+}

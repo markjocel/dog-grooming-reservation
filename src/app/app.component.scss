@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F6F1;
+    margin: 1rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    border-radius: 10px;
+    .logo{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img{
+            width: 40px;
+            margin-right: 1rem;
+        }
+
+        h1{
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+    }
+}
+
+nav{
+    ul{
+        list-style-type: none;
+
+            a{
+                background-color: #CBFF5C;
+                padding: 1rem;
+                text-decoration: none;
+                font-weight: 800;
+                text-transform: uppercase;
+                border-radius: 1rem;
+            }
+    }
+}
